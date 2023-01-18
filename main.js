@@ -330,7 +330,7 @@ var requestOptions = {
 
   //ピアストリ 
   fetch("https://ergast.com/api/f1/drivers/piastri", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading")}})
+    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
     //.then(result => console.log(result))
     .then(result => {n9.textContent = result})
     .catch(error => console.log('error', error));
@@ -444,15 +444,15 @@ var requestOptions = {
 
 
   //ヒュルケンベルグ 
-  fetch("", requestOptions)
-    .then(response => response.text())
+  fetch("https://ergast.com/api/f1/drivers/hulkenberg", requestOptions)
+    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
     //.then(result => console.log(result))
     .then(result => {n16.textContent = result})
     .catch(error => console.log('error', error));
 
   //デフリース 
-  fetch("", requestOptions)
-    .then(response => response.text())
+  fetch("https://ergast.com/api/f1/drivers/devries", requestOptions)
+    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
     //.then(result => console.log(result))
     .then(result => {n17.textContent = result})
     .catch(error => console.log('error', error));
