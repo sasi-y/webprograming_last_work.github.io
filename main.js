@@ -205,7 +205,7 @@ var requestOptions = {
 
   //ペレス perez 
   fetch("https://ergast.com/api/f1/drivers/perez", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -222,7 +222,7 @@ var requestOptions = {
 
   //ルクレール  leclerc
   fetch("https://ergast.com/api/f1/drivers/leclerc", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
         const parser = new DOMParser();
         const sitemap = parser.parseFromString(data, "application/xml");
@@ -240,7 +240,7 @@ var requestOptions = {
 
   //サインツ  sainz
   fetch("https://ergast.com/api/f1/drivers/sainz", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -258,7 +258,7 @@ var requestOptions = {
 
   //ラッセル  russell
   fetch("https://ergast.com/api/f1/drivers/russell", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -276,7 +276,7 @@ var requestOptions = {
 
   //ハミルトン hamilton
   fetch("https://ergast.com/api/f1/drivers/hamilton", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -294,7 +294,7 @@ var requestOptions = {
 
   //オコン ocon
   fetch("https://ergast.com/api/f1/drivers/ocon", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -312,7 +312,7 @@ var requestOptions = {
 
   //ガスリー  gasly
   fetch("https://ergast.com/api/f1/drivers/gasly", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -330,7 +330,7 @@ var requestOptions = {
 
   //ピアストリ 
   fetch("https://ergast.com/api/f1/drivers/piastri", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -349,7 +349,7 @@ var requestOptions = {
 
   //ノリス norris
   fetch("https://ergast.com/api/f1/drivers/norris", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -367,7 +367,7 @@ var requestOptions = {
 
   //ボッタス bottas
   fetch("https://ergast.com/api/f1/drivers/bottas", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -385,7 +385,7 @@ var requestOptions = {
 
   //ジョウ zhou
   fetch("https://ergast.com/api/f1/drivers/zhou", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -403,7 +403,7 @@ var requestOptions = {
 
   //ストロール stroll
   fetch("https://ergast.com/api/f1/drivers/stroll", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -421,7 +421,7 @@ var requestOptions = {
 
   //アロンソ alonso
   fetch("https://ergast.com/api/f1/drivers/alonso", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -439,7 +439,7 @@ var requestOptions = {
 
   //マグネッセン magnussen
   fetch("https://ergast.com/api/f1/drivers/magnussen", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -457,7 +457,7 @@ var requestOptions = {
 
   //ヒュルケンベルグ 
   fetch("https://ergast.com/api/f1/drivers/hulkenberg", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -476,7 +476,7 @@ var requestOptions = {
 
   //デフリース 
   fetch("https://ergast.com/api/f1/drivers/de_vries", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -495,7 +495,7 @@ var requestOptions = {
 
   //角田 tsunoda
   fetch("https://ergast.com/api/f1/drivers/tsunoda", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -513,7 +513,7 @@ var requestOptions = {
 
   //アルボン albon
   fetch("https://ergast.com/api/f1/drivers/albon", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
@@ -531,7 +531,7 @@ var requestOptions = {
 
   //サージェント
   fetch("https://ergast.com/api/f1/drivers/sargeant", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => response.text())
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
