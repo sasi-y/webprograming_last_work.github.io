@@ -329,12 +329,12 @@ var requestOptions = {
 
 
   //ピアストリ 
-  /*fetch("", requestOptions)
-    .then(response => response.text())
+  fetch("https://ergast.com/api/f1/drivers/piastri", requestOptions)
+    .then(response => {if(response.ok){response.text()} else{return("Loading")}})
     //.then(result => console.log(result))
     .then(result => {n9.textContent = result})
     .catch(error => console.log('error', error));
-*/
+
   //ノリス norris
   fetch("https://ergast.com/api/f1/drivers/norris", requestOptions)
     .then(response => response.text())
