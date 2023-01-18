@@ -494,8 +494,8 @@ var requestOptions = {
 
 
   //サージェント
-  fetch("", requestOptions)
-    .then(response => response.text())
+  fetch("https://ergast.com/api/f1/drivers/sargeant", requestOptions)
+    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
     //.then(result => console.log(result))
     .then(result => {n20.textContent = result})
     .catch(error => console.log('error', error));
