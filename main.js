@@ -475,7 +475,7 @@ var requestOptions = {
 	});
 
   //デフリース 
-  fetch("https://ergast.com/api/f1/drivers/devries", requestOptions)
+  fetch("https://ergast.com/api/f1/drivers/de_vries", requestOptions)
     .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
     .then(data => {
 		const parser = new DOMParser();
