@@ -186,7 +186,7 @@ var requestOptions = {
 
   //フェルスタッペン max_verstappen
   fetch("https://ergast.com/api/f1/drivers/max_verstappen", requestOptions)
-    .then(response => {if(response.ok){response.text()} else{return("Loading....")}})
+    .then(response => {if(response.ok){response.text()}})
     .then(data => {
 		const parser = new DOMParser();
 		const sitemap = parser.parseFromString(data, "application/xml");
